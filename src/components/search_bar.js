@@ -10,7 +10,6 @@ class SearchBar extends Component {
   //Solo podemos usar state en class-based components
   constructor(props){
     super(props);
-
     this.state = { term: ''} //Solo en el constructor podemos modificar el state de esta forma
   }
 
@@ -20,11 +19,19 @@ class SearchBar extends Component {
       <div className="search-bar">
         <input
           value = { this.state.term }
-          onChange = { event => this.setState({ term: event.target.value }) }
+          onChange = { event => this.onInputChange(event.target.value) }
         />
-        {/*Esta es la forma de modificar el state*/}
       </div>
     );
+  }
+
+  onInputChange(term){
+    /*
+    El state que modifico de esta forma es el que usa este componente "search_bar"
+    Para modificar el state del componente padre, mando la data via callback
+    */
+    this.setState({term});
+    this.props.onSearchTermChange(term);
   }
 }
 
