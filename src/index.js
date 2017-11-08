@@ -24,6 +24,8 @@ const YOUTUBE_API_KEY = 'AIzaSyBU_epRqlPZUEJoMf33CRaeoJBP0p1js4A';
 };*/
 
 //Class based component. Lo usamos como alternativa al funcional. Diferencias?
+//Los class based components me permiten manejar el state en cada component.
+//El functional component me obliga a ser stateless, me prepara para Redux
 class App extends Component {
 
   constructor(props){
