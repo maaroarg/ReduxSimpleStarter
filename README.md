@@ -1,4 +1,8 @@
-# ReduxSimpleStarter
+# React Example :  Visualización de videos de youtube
+
+Este ejemplo utiliza React puro sin manejador de state (como redux o apollo2). Esta basado en un curso de Udemy. En cada archivo hay notas que referencian al video original del autor.
+
+## ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
 
